@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "4f79418e-84ea-4bc6-ae88-9f6f34fe063c",
+		"name": "usco ponderado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16477015"
+	},
+	"item": [
+		{
+			"name": "Faculty",
+			"item": [
+				{
+					"name": "Create Faculty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Facultad de Salud\",\n    \"description\": \"Facultad de Salud Universidad Surcolombiana\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/faculty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"faculty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Faculty",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"Facultad de Ingeniería\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/faculty/63361ebe322d014f5b68a799",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"faculty",
+								"63361ebe322d014f5b68a799"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All faculties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/faculty",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"faculty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyId faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/faculty/63361ebe322d014f5b68a798",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"faculty",
+								"63361ebe322d014f5b68a798"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete faculty",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/faculty/633623f62c3f7ec9562449ad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"faculty",
+								"633623f62c3f7ec9562449ad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Career",
+			"item": [
+				{
+					"name": "Create Career",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"title\": \"Ingeniería de Software\",\n  \"estimatedProgramDuration\": \"10 semestres\",\n  \"numberOfAcademicCredits\": 165,\n  \"academicLevel\": \"Pregrado\",\n  \"levelOfEducation\": \"Universitario\",\n  \"admissionPeriodicity\": \"Semestral\",\n  \"trainingModality\": \"Presencial mixta\",\n  \"degreeAwarded\": \"Ingeniero de Software\",\n  \"sniesRegistry\": \"102526\",\n  \"faculty\": \"63361ebe322d014f5b68a799\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/career",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"career"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update career",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"academicLevel\": \"Pregrado test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/career/63362fa1a58a700c1419aed7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"career",
+								"63362fa1a58a700c1419aed7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All careers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/career",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"career"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyId career",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/career/63362fa1a58a700c1419aed7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"career",
+								"63362fa1a58a700c1419aed7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete career",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/career/63362b9af5095096310362ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"career",
+								"63362b9af5095096310362ee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ponderado",
+			"item": [
+				{
+					"name": "Create Ponderado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lecturaCritica\": 12,\n    \"cienciasNaturales\": 32,\n    \"matematicas\": 31,\n    \"ingles\": 32,\n    \"socialesYCiudadanas\": 56,\n    \"career\": \"63362fa1a58a700c1419aed7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/ponderado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Ponderado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lecturaCritica\": 12,\n    \"cienciasNaturales\": 32,\n    \"matematicas\": 31,\n    \"ingles\": 32,\n    \"socialesYCiudadanas\": 56\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/ponderado/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update ponderado",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lecturaCritica\": 12,\n    \"cienciasNaturales\": 32\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/ponderado/63362fa1a58a700c1419aed7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado",
+								"63362fa1a58a700c1419aed7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All ponderados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/ponderado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyId ponderado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/ponderado/63363d4debe0f7779494e012",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado",
+								"63363d4debe0f7779494e012"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete ponderado",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/ponderado/63362b9af5095096310362ee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ponderado",
+								"63362b9af5095096310362ee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
